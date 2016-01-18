@@ -91,3 +91,7 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((dot . t)))
