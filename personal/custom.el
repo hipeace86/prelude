@@ -1,4 +1,4 @@
-(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors zencoding-mode impatient-mode))
+(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -85,7 +85,7 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 ;; html-mode auto setting
-(add-hook 'html-mode-hook (lambda () (zencoding-mode 1)))
+(add-hook 'html-mode-hook (lambda () (emmet-mode 1)))
 (add-hook 'html-mode-hook (lambda () (impatient-mode 1)))
 
 
