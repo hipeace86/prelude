@@ -94,4 +94,16 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((dot . t)))
+ '((dot . t)
+   (python . t)
+   (js . t)))
+(require 'ox-reveal)
+;;(setq org-reveal-root "file:///data/www/reveal.js")
+
+(defun fci-mode-override-advice (&rest args))
+(advice-add 'org-html-fontify-code :around
+            (lambda (fun &rest args)
+              (advice-add 'fci-mode :override #'fci-mode-override-advice)
+              (let ((result  (apply fun args)))
+                (advice-remove 'fci-mode #'fci-mode-override-advice)
+                result)))
