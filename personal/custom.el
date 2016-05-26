@@ -76,7 +76,9 @@
 ;; system must execute:pip install elpy rope jedi
 (require 'elpy nil t)
 (elpy-enable)
+(elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 (require 'multiple-cursors)
 ;; global keybinding for multiple-cursor
