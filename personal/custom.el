@@ -1,4 +1,4 @@
-(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode))
+(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode ox-reveal slime))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -76,7 +76,7 @@
 ;; system must execute:pip install elpy rope jedi
 (require 'elpy nil t)
 (elpy-enable)
-(elpy-use-ipython)
+;;(elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
