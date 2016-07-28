@@ -89,7 +89,7 @@
 ;; html-mode auto setting
 (add-hook 'html-mode-hook (lambda () (emmet-mode 1)))
 (add-hook 'html-mode-hook (lambda () (impatient-mode 1)))
-
+(add-hook 'org-mode-hook (lambda () (load-theme 'tangotango t)))
 
 (require 'yasnippet)
 (yas-global-mode 1)
