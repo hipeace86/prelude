@@ -42,6 +42,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(defun load-molokai-theme()(load-theme 'molokai t))
 ;; set lisp system and optionally
 (setq inferior-lisp-program "sbcl")
 (setq slime-contribs '(slime-fancy))
@@ -78,7 +79,7 @@
 (elpy-enable)
 ;;(elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
-(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+(add-hook 'python-mode-hook (lambda() (py-autopep8-enable-on-save)(load-molokai-theme)))
 
 (require 'multiple-cursors)
 ;; global keybinding for multiple-cursor
@@ -87,7 +88,7 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 ;; html-mode auto setting
-(add-hook 'html-mode-hook (lambda () (emmet-mode 1)))
+(add-hook 'html-mode-hook (lambda () (emmet-mode 1)(load-molokai-theme)))
 (add-hook 'html-mode-hook (lambda () (impatient-mode 1)))
 (add-hook 'org-mode-hook (lambda () (load-theme 'tangotango t)))
 
