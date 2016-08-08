@@ -1,4 +1,4 @@
-(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode ox-reveal slime py-autopep8))
+(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode ox-reveal slime py-autopep8 tangotango-theme))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
