@@ -79,7 +79,7 @@
 (elpy-enable)
 ;;(elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
-(add-hook 'python-mode-hook (lambda() (py-autopep8-enable-on-save)(load-molokai-theme)))
+(add-hook 'python-mode-hook (lambda() (py-autopep8-enable-on-save)))
 
 (require 'multiple-cursors)
 ;; global keybinding for multiple-cursor
@@ -88,9 +88,9 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 ;; html-mode auto setting
-(add-hook 'html-mode-hook (lambda () (emmet-mode 1)(load-molokai-theme)))
+(add-hook 'html-mode-hook (lambda () (emmet-mode 1)))
 (add-hook 'html-mode-hook (lambda () (impatient-mode 1)))
-(add-hook 'org-mode-hook (lambda () (load-theme 'tangotango t)))
+;; (add-hook 'org-mode-hook (lambda () (load-theme 'tangotango t)))
 
 (require 'yasnippet)
 (yas-global-mode 1)
