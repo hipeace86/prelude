@@ -16,7 +16,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (dockerfile-mode php-mode yaml-mode go-mode json-mode lua-mode ox-reveal markdown-mode impatient-mode emmet-mode multiple-cursors elpy graphviz-dot-mode neotree molokai-theme fill-column-indicator auto-complete vkill exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit projectile ov imenu-anywhere guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl easy-kill diminish diff-hl discover-my-major dash crux browse-kill-ring beacon anzu ace-window)))
+    (slim-mode slime tangotango-theme dockerfile-mode php-mode yaml-mode go-mode json-mode lua-mode ox-reveal markdown-mode impatient-mode emmet-mode multiple-cursors elpy graphviz-dot-mode neotree molokai-theme fill-column-indicator auto-complete vkill exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit projectile ov imenu-anywhere guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl easy-kill diminish diff-hl discover-my-major dash crux browse-kill-ring beacon anzu ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
