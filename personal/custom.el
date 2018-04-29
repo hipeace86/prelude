@@ -1,4 +1,4 @@
-(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode ox-reveal))
+(prelude-require-packages '(auto-complete fill-column-indicator molokai-theme neotree graphviz-dot-mode elpy multiple-cursors emmet-mode impatient-mode markdown-mode))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -104,8 +104,6 @@
  '((dot . t)
    (python . t)
    (js . t)))
-(require 'ox-reveal)
-;;(setq org-reveal-root "file:///data/www/reveal.js")
 
 (defun fci-mode-override-advice (&rest args))
 (advice-add 'org-html-fontify-code :around
